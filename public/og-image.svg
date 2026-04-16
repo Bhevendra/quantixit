@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="100%" stop-color="#0c1a4b"/>
+    </linearGradient>
+    <linearGradient id="arrow" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="80%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <!-- faint grid -->
+  <g stroke="#1e293b" stroke-width="1" opacity="0.35">
+    <line x1="0" y1="80" x2="1200" y2="80"/>
+    <line x1="0" y1="160" x2="1200" y2="160"/>
+    <line x1="0" y1="240" x2="1200" y2="240"/>
+    <line x1="0" y1="320" x2="1200" y2="320"/>
+    <line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="0" y1="480" x2="1200" y2="480"/>
+    <line x1="0" y1="560" x2="1200" y2="560"/>
+    <line x1="80" y1="0" x2="80" y2="630"/>
+    <line x1="240" y1="0" x2="240" y2="630"/>
+    <line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="560" y1="0" x2="560" y2="630"/>
+    <line x1="720" y1="0" x2="720" y2="630"/>
+    <line x1="880" y1="0" x2="880" y2="630"/>
+    <line x1="1040" y1="0" x2="1040" y2="630"/>
+  </g>
+
+  <!-- Logo -->
+  <g transform="translate(80, 90)">
+    <g fill="#ffffff">
+      <circle cx="14" cy="28" r="5"/>
+      <line x1="14" y1="28" x2="14" y2="56" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round"/>
+      <circle cx="28" cy="18" r="5"/>
+      <line x1="28" y1="18" x2="28" y2="56" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round"/>
+      <circle cx="42" cy="24" r="5"/>
+      <line x1="42" y1="24" x2="42" y2="56" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round"/>
+      <circle cx="56" cy="12" r="5"/>
+      <line x1="56" y1="12" x2="56" y2="56" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round"/>
+    </g>
+    <path d="M4 68 L22 50 L32 58 L48 42 L58 50 L70 28"
+          stroke="url(#arrow)" stroke-width="5.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M58 28 L70 28 L70 40"
+          stroke="url(#arrow)" stroke-width="5.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="90" y="50" font-family="'Space Grotesk', 'Inter', sans-serif"
+          font-size="42" font-weight="700" fill="#ffffff">
+      Quantix <tspan fill="#22d3ee">IT</tspan>
+    </text>
+  </g>
+
+  <!-- Tagline -->
+  <text x="80" y="320" font-family="'Space Grotesk', 'Inter', sans-serif"
+        font-size="82" font-weight="700" fill="#ffffff">Transform Your Data</text>
+  <text x="80" y="410" font-family="'Space Grotesk', 'Inter', sans-serif"
+        font-size="82" font-weight="700">
+    <tspan fill="#ffffff">Into </tspan>
+    <tspan fill="url(#arrow)">Decisions</tspan>
+  </text>
+
+  <text x="80" y="470" font-family="'Inter', sans-serif"
+        font-size="26" fill="#94a3b8">
+    Data Engineering · Business Intelligence · AI &amp; Automation
+  </text>
+
+  <!-- Footer line -->
+  <text x="80" y="560" font-family="'Inter', sans-serif"
+        font-size="22" fill="#64748b">
+    quantixit.in  ·  London  ·  Bengaluru
+  </text>
+</svg>

@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg: 255 255 255;
+    --fg: 15 23 42;
+    --muted: 100 116 139;
+    --card: 255 255 255;
+    --border: 226 232 240;
+    --brand: 37 99 235;
+    --accent: 6 182 212;
+  }
+
+  .dark {
+    --bg: 2 6 23;
+    --fg: 248 250 252;
+    --muted: 148 163 184;
+    --card: 15 23 42;
+    --border: 30 41 59;
+    --brand: 96 165 250;
+    --accent: 34 211 238;
+  }
+
+  * {
+    border-color: rgb(var(--border));
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: rgb(var(--bg));
+    color: rgb(var(--fg));
+    font-feature-settings: 'rlig' 1, 'calt' 1, 'ss01' 1;
+  }
+
+  ::selection {
+    background-color: rgba(34, 211, 238, 0.25);
+    color: rgb(var(--fg));
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(var(--border));
+    border-radius: 8px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(var(--muted));
+  }
+}
+
+@layer components {
+  .container-xl {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-brand-600 to-accent-glow px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-brand-600/20 transition-all duration-300 hover:shadow-accent-glow/40 hover:scale-[1.02] active:scale-[0.98];
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-ink-300 bg-white/60 px-6 py-3 text-sm font-semibold text-ink-800 backdrop-blur transition-all duration-300 hover:border-brand-500 hover:bg-white dark:border-ink-700 dark:bg-ink-900/60 dark:text-ink-100 dark:hover:border-accent dark:hover:bg-ink-900;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-2 rounded-full border border-ink-200 bg-ink-50 px-3 py-1 text-xs font-medium text-ink-600 dark:border-ink-800 dark:bg-ink-900/60 dark:text-ink-300;
+  }
+
+  .section {
+    @apply scroll-mt-24 py-20 sm:py-28;
+  }
+
+  .section-title {
+    @apply font-display text-3xl font-bold tracking-tight text-ink-900 sm:text-4xl lg:text-5xl dark:text-white;
+  }
+
+  .section-eyebrow {
+    @apply mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-brand-600 dark:text-accent;
+  }
+
+  .card {
+    @apply rounded-2xl border border-ink-200 bg-white/70 p-6 shadow-sm backdrop-blur transition-all duration-300 dark:border-ink-800 dark:bg-ink-900/50;
+  }
+
+  .card-hover {
+    @apply hover:-translate-y-1 hover:border-brand-400 hover:shadow-xl hover:shadow-brand-600/10 dark:hover:border-accent/50 dark:hover:shadow-accent/10;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-brand-500 via-accent to-accent-purple bg-clip-text text-transparent;
+  }
+
+  .glow-ring {
+    box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.2), 0 0 40px -10px rgba(34, 211, 238, 0.35);
+  }
+}
+
+/* Subtle grid background overlay */
+.bg-grid {
+  background-image: linear-gradient(to right, rgba(148, 163, 184, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(148, 163, 184, 0.08) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black, transparent 80%);
+}
+.dark .bg-grid {
+  background-image: linear-gradient(to right, rgba(148, 163, 184, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(148, 163, 184, 0.06) 1px, transparent 1px);
+}
+
+/* Reveal-on-scroll (used via IntersectionObserver in components) */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

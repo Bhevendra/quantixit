@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="arrow" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="1024" fill="transparent"/>
+  <!-- Nodes and stems -->
+  <g fill="#0c1a4b" stroke="#0c1a4b" stroke-linecap="round">
+    <line x1="320" y1="440" x2="320" y2="620" stroke-width="32"/>
+    <circle cx="320" cy="440" r="44"/>
+    <line x1="440" y1="320" x2="440" y2="620" stroke-width="32"/>
+    <circle cx="440" cy="320" r="44"/>
+    <line x1="560" y1="400" x2="560" y2="620" stroke-width="32"/>
+    <circle cx="560" cy="400" r="44"/>
+    <line x1="680" y1="260" x2="680" y2="620" stroke-width="32"/>
+    <circle cx="680" cy="260" r="44"/>
+  </g>
+  <!-- Rising arrow -->
+  <path d="M200 720 L360 560 L460 640 L620 480 L720 560 L840 380"
+        stroke="url(#arrow)" stroke-width="58" fill="none"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M720 380 L840 380 L840 500"
+        stroke="url(#arrow)" stroke-width="58" fill="none"
+        stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
