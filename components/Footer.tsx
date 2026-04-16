@@ -30,7 +30,7 @@ export function Footer() {
                 <Linkedin className="h-4 w-4" />
               </a>
               <a
-                href="mailto:hr-uk@quantixit.in"
+                href="mailto:info@quantixit.uk"
                 aria-label="Email Quantix IT"
                 className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-ink-200 text-ink-600 transition-colors hover:border-brand-500 hover:text-brand-600 dark:border-ink-700 dark:text-ink-300 dark:hover:border-accent dark:hover:text-accent"
               >
@@ -74,10 +74,10 @@ export function Footer() {
             <ul className="mt-4 space-y-3 text-sm text-ink-600 dark:text-ink-300">
               <li>
                 <a
-                  href="mailto:hr-uk@quantixit.in"
+                  href="mailto:info@quantixit.uk"
                   className="hover:text-brand-600 dark:hover:text-accent"
                 >
-                  hr-uk@quantixit.in
+                  info@quantixit.uk
                 </a>
               </li>
               <li>

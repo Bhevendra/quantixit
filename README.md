@@ -4,7 +4,7 @@ Modern, premium marketing website for **Quantix IT Ltd.** — a data engineering
 
 Built with **Next.js 14 (App Router)**, **TypeScript**, **Tailwind CSS**, and deployed on **Vercel**.
 
-Live contact: [hr-uk@quantixit.in](mailto:hr-uk@quantixit.in) · +44 7776 802047 · [LinkedIn](https://www.linkedin.com/company/quantix-it/)
+Live contact: [info@quantixit.uk](mailto:info@quantixit.uk) · +44 7776 802047 · [LinkedIn](https://www.linkedin.com/company/quantix-it/)
 
 ---
 
@@ -83,7 +83,7 @@ git push -u origin main
 ### Step 2 — Get a free Web3Forms access key
 
 1. Go to <https://web3forms.com>
-2. Enter `hr-uk@quantixit.in` — they'll email you a free **access key**
+2. Enter `info@quantixit.uk` — they'll email you a free **access key**
 3. Copy the key (it looks like `a1b2c3d4-e5f6-7890-abcd-ef1234567890`)
 
 ### Step 3 — Import into Vercel
@@ -96,13 +96,13 @@ git push -u origin main
    | Name | Value |
    |------|-------|
    | `NEXT_PUBLIC_WEB3FORMS_KEY` | your Web3Forms access key |
-   | `NEXT_PUBLIC_SITE_URL` | `https://quantixit.in` |
+   | `NEXT_PUBLIC_SITE_URL` | `https://quantixit.uk` |
 
 5. Click **Deploy**. Done.
 
-### Step 4 — Point your domain (quantixit.in) at Vercel
+### Step 4 — Point your domain (quantixit.uk) at Vercel
 
-1. In Vercel: **Project → Settings → Domains → Add** → enter `quantixit.in` and `www.quantixit.in`
+1. In Vercel: **Project → Settings → Domains → Add** → enter `quantixit.uk` and `www.quantixit.uk`
 2. Vercel will show DNS records. In your domain registrar (e.g. GoDaddy, Namecheap, Cloudflare):
    - Add an **A record** for `@` → `76.76.21.21`
    - Add a **CNAME record** for `www` → `cname.vercel-dns.com`
@@ -171,12 +171,12 @@ All marketing copy lives inside the components in `/components/`:
 - Clear, factual copy with verifiable specifics (office cities, services, tech stack) — models prefer factual, structured content
 
 **Things YOU should do after deploy:**
-1. Add the site to [Google Search Console](https://search.google.com/search-console) and submit the sitemap (`https://quantixit.in/sitemap.xml`)
+1. Add the site to [Google Search Console](https://search.google.com/search-console) and submit the sitemap (`https://quantixit.uk/sitemap.xml`)
 2. Add to [Bing Webmaster Tools](https://www.bing.com/webmasters)
 3. Create a **Google Business Profile** for London and Bengaluru offices (huge local-SEO lift)
 4. Publish 2–4 case studies or blog posts (`/blog/*`) for long-tail keywords like *"Power BI consulting London"*, *"Databricks implementation Bengaluru"*
 5. Get 5–10 inbound links — LinkedIn posts, Clutch profile, partner sites, a Medium article
-6. Verify your LinkedIn Company Page and link it back to `quantixit.in`
+6. Verify your LinkedIn Company Page and link it back to `quantixit.uk`
 
 ---
 
@@ -185,7 +185,7 @@ All marketing copy lives inside the components in `/components/`:
 The form is handled entirely client-side by Web3Forms — no backend or API route needed.
 
 - Free tier: **unlimited** submissions, no branding
-- Submissions arrive in the email you signed up with (`hr-uk@quantixit.in`)
+- Submissions arrive in the email you signed up with (`info@quantixit.uk`)
 - Add more recipients, webhooks, auto-responder etc. in the Web3Forms dashboard
 
 To **change the recipient email**, simply re-register at Web3Forms with a new address and update `NEXT_PUBLIC_WEB3FORMS_KEY` in Vercel env vars — no code changes needed.
@@ -210,4 +210,4 @@ Proprietary — © Quantix IT Ltd. All rights reserved.
 
 ## ❓ Support
 
-Questions on the code? Open an issue in the GitHub repo, or email `hr-uk@quantixit.in`.
+Questions on the code? Open an issue in the GitHub repo, or email `info@quantixit.uk`.

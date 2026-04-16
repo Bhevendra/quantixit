@@ -34,7 +34,7 @@ export function Contact() {
     }
 
     formData.append('access_key', accessKey);
-    formData.append('subject', 'New lead from quantixit.in');
+    formData.append('subject', 'New lead from quantixit.uk');
     formData.append('from_name', 'Quantix IT Website');
 
     try {
@@ -90,8 +90,8 @@ export function Contact() {
                 <ContactItem
                   icon={Mail}
                   label="Email"
-                  value="hr-uk@quantixit.in"
-                  href="mailto:hr-uk@quantixit.in"
+                  value="info@quantixit.uk"
+                  href="mailto:info@quantixit.uk"
                 />
                 <ContactItem
                   icon={Phone}

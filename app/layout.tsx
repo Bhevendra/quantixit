@@ -15,7 +15,7 @@ const spaceGrotesk = Space_Grotesk({
   display: 'swap',
 });
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://quantixit.in';
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://quantixit.uk';
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -116,7 +116,7 @@ const jsonLd = {
   logo: `${SITE_URL}/logo.svg`,
   description:
     'Data engineering, business intelligence and AI solutions for modern businesses.',
-  email: 'hr-uk@quantixit.in',
+  email: 'info@quantixit.uk',
   telephone: '+44 7776 802047',
   sameAs: ['https://www.linkedin.com/company/quantix-it/'],
   address: [
